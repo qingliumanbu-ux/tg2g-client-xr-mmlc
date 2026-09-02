@@ -1,0 +1,23 @@
+<template>
+  <div style="height: 100%">
+    <xr-ef-form
+      @ready="efFormReady"
+      :f2-do="F2_DO"
+      :in-dialog-form-name="openInDialog ? dialogFormName : null"
+      @closeDialog="closeEfDialog"
+    >
+      <er-layout
+        v-if="initializeFlag === 1"
+        :er-form-helper-prop="erFormHelper"
+        :config-id="'layoutControlGroup1'"
+      ></er-layout>
+    </xr-ef-form>
+  </div>
+</template>
+
+<script lang="ts" src="./MMSMUPD863V.ts"></script>
+
+<style lang="scss" scoped>
+@import "./MMSMUPD863V.scss";
+</style>
+./MMSMUPD863V.js./MMSMUPD863V.js
